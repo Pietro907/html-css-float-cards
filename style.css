@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
-    max-width: 920px;
 }
+header {
+    max-width: 920px;
 
+}
 
 header, main {
     width: 100%;
@@ -22,25 +24,45 @@ h1 {
     width: 920px;
     margin: 0 auto;
 }
+.container_card{
+    width: 1200px;
+}
+.col{
+    float: left;
+    width: calc(90% / 3);
+    margin: 0.5rem;
+}
 
-.column {
+/* .column {
     float: left;
     width: calc(100% / 3);
     padding: 0 0.9rem 1rem;
-}
+} */
 
 .card {
     background-color: rgb(15, 14, 23);
     color: white;
     text-align: left;
+    box-shadow: 10px 1px 10px 1px;
+    height: 100px;
+    & a{
+        text-decoration: none;
+        color: rgb(102, 197, 242);
+
+    }
 }
+.card h4{
+    padding: 1.2rem 0 0;
+}
+
 
 .card img {
     height: 100px;
     float: left;
+    padding-right: 0.5rem;
 }
 
-.card > .card-content {
+/* .card > .card-content {
     float:left;
     width: calc(100% - 100px);
     padding: 10px 0 0 10px;
@@ -48,19 +70,20 @@ h1 {
 
 .card-content > h4, p, .email {
     padding: 0.3rem 0;
-}
+} */
 
-.card .card-content .email {
+/* .card .card-content .email {
     color: rgb(102, 197, 242);
     font-size: 0.9rem;
     padding: 0.3rem 0;
+    text-decoration: none;
+} */
 
-}
 
 /* Tools */
 
-.clearfix:after {
+/* .clearfix:after {
     content: "";
     display: block;
     clear: both;
-}
+} */
